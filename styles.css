@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', monospace;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 800px;
+    height: 550px;
+    margin: 90px auto;
+    background-color: black;
+    padding: 20px;
+    align: bottom;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#container:hover {
+    box-shadow: 50 20 30px rgba(255, 0, 0, 0.2);
+}
+body {
+    background-image: url('chevrolet-camaro-8k-2560x1440-13233.jpg'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* This property ensures that the background image covers the entire container */
+    background-position: top; /* This property centers the background image */
+    background-repeat: no-repeat; /* This property prevents the background image from repeating */
+  }
+  
+h1 {
+    text-align: center;
+    color: turquoise;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+#options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 18px 20px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e9a30d;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.8s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output {
+    border-top: 2px solid #f10000;
+    margin-top: 25px;
+    padding-top: 50px;
+    text-align: left;
+    word-spacing: 10px;
+    font-size: 25px;
+    color:#45a049;
+}
+
+/* Improved popup styles with animation */
+.popup-container {
+    display: none;
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add more styles as needed */
